@@ -1,0 +1,283 @@
+body {
+    font-family: 'Poppins', 'Varela Round', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(../images/light-theme-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #020202;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .pikachu-running {
+    width: 75px;
+    margin-top: 25px;
+}
+
+header .logo {
+    width: 250px;
+    transition: 0.2s ease-in-out;
+}
+
+header .theme-button {
+    width: 80px;
+    margin-right: 7px;
+    position: relative;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+header .logo:hover,
+header #button-switch-theme:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+header #button-switch-theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+body.dark-theme {
+    background-image: url(../images/dark-theme-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.dark-theme .poke-card {
+    background-image: url('./../images/poke-card-dark-theme.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-theme .poke-card:hover {
+    background-image: url('./../images/poke-card-dark-theme2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.dark-theme .description {
+    background-color: #93929f;
+}
+
+body .gif-xs:hover,
+body .gif-s:hover,
+body .gif-m:hover,
+body .gif-b:hover,
+body .gif-xb:hover,
+body .gif-ekans:hover,
+body .gif-charmeleon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.sparkle-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    padding: 25px;
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .poke-card {
+    background-image: url('./../images/poke-card-light-theme.png');
+    background-size: cover;
+    background-position: center;
+    width: 205px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card:hover {
+    background-image: url('./../images/poke-card-light-theme2.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+main .poke-card .infos {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #161616;
+    background-color: #f5f5f549;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000000b4;
+}
+
+main .poke-card .infos span {
+    font-family: 'Varela Round', sans-serif;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dark-theme main .poke-card .infos {
+    border-color: #ffffff;
+}
+
+main .poke-card .gif-xs {
+    width: 55px;
+    height: 55px;
+    margin-top: 45px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card .gif-s {
+    width: 63px;
+    height: 63px;
+    margin-top: 37px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card .gif-m {
+    width: 78px;
+    height: 78px;
+    margin-top: 22px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card .gif-b {
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card .gif-xb {
+    width: 100px;
+    height: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card .gif-ekans {
+    width: 70px;
+    height: 60px;
+    margin-top: 30px;
+    transition: 0.2s ease-in-out
+}
+
+main .poke-card .gif-charmeleon {
+    margin-left: 25px;
+    width: 92px;
+    height: 78px;
+    margin-top: 22px;
+    transition: 0.2s ease-in-out
+}
+
+main .poke-card .types {
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+main .poke-card .type {
+    font-weight: 500;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #00000083;
+}
+
+.grass {
+
+    background-color: #74ca42;
+}
+
+.poison {
+    background-color: #ca2fbdfb;
+}
+
+.water {
+    background-color: #6390f0;
+}
+
+.fire {
+    background-color: #ee8130;
+}
+
+.flying {
+    background-color: #a0d6d3;
+}
+
+.bug {
+    background-color: #a6b91a;
+}
+
+.normal {
+    background-color: #b6ae8d;
+}
+
+.electric {
+    background-color: #e4c724;
+}
+
+main .description {
+    background-color: #ded6d2;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: justify;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 6px;
+    margin: -4px;
+}
+
+.to-top {
+    width: 55px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
